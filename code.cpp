@@ -1,24 +1,63 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
+// int main() {
+//     vector<int> v = {1, 2, 3, 4, 5};
+
+//     // Get the last element
+//     int lastElement = v[v.size() - 1];
+
+//     // Print the last element
+//     cout << "The last element is: " << lastElement << endl;
+
+//     return 0;
+// }
+
+// int main() {
+//     vector<int> v = {1, 2, 3, 4, 5};
+
+//     // Get the last element
+//     int lastElement = v.back();
+
+//     // Print the last element
+//     cout << "The last element is: " << lastElement << endl;
+
+//     return 0;
+// }
+
 int main() {
-    int N;
-    cin >> N;
-    int A[N];
+    vector<int> v = {1, 2, 3, 4, 5};
 
-    // Reading the array elements
-    for (int i = 0; i < N; i++) {
-        cin >> A[i];
-    }
+    // Insert 20 at index 3
+    v.insert(v.begin() + 3, 20);
 
-    // Printing the array in reverse order
-    for (int i = N - 1; i >= 0; i--) {
-        cout << A[i] << " ";
+    // Print the updated vector
+    for (int i : v) {
+        cout << i << " ";
     }
-    cout << endl;
 
     return 0;
 }
+
+// int main() {
+//     int N;
+//     cin >> N;
+//     int A[N];
+
+//     // Reading the array elements
+//     for (int i = 0; i < N; i++) {
+//         cin >> A[i];
+//     }
+
+//     // Printing the array in reverse order
+//     for (int i = N - 1; i >= 0; i--) {
+//         cout << A[i] << " ";
+//     }
+//     cout << endl;
+
+//     return 0;
+// }
 
 
 //five number...
